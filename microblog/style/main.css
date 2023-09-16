@@ -8,6 +8,8 @@ body {
   font-size: 14px;
   color: #3c3d3f;
   text-align: left;
+  max-width: 60%;     /* set the body to be 60% of the screen width */
+  margin: auto;       /* center the app in the middle of the browser window */
 }
 
 header {

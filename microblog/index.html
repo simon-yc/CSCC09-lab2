@@ -5,6 +5,7 @@
     <title>Microblog</title>
     <link href="style/main.css" rel="stylesheet" type="text/css" />
     <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <link href="style/message.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -20,9 +21,38 @@
         name="user_name"
         required
       />
+      <textarea class="form_element" placeholder="Enter your message"  rows="5" required></textarea>
+      <button type="submit" class="btn" id="submit_button">Post your message</button>
     </form>
 
-    <div id="messages"></div>
+
+    <div id="messages">
+      <div class="message">
+        <div class="message_header">
+            <div class="message_avatar"><img src="media/girl-avatar.png" alt=""/></div>
+            <div class="message_name">Alice</div>
+        </div>
+        <div class="message_content">This microblog is way better than Piazza!</div>
+        <div class="message_vote">
+            <div class="upvote_button"><span class="count">0</span></div>
+            <div class="downvote_button"><span class="count">0</span></div>
+            <div class="delete_button"></div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_header">
+            <div class="message_avatar"><img src="media/boy-avatar.png" alt=""/></div>
+            <div class="message_name">Bob</div>
+        </div>
+        <div class="message_content">Welcome to CSCC09!</div>
+        <div class="message_vote">
+            <div class="upvote_button"><span class="count">0</span></div>
+            <div class="downvote_button"><span class="count">0</span></div>
+            <div class="delete_button"></div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <a href="/credits.html">credits</a>
